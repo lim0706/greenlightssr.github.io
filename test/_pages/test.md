@@ -1,6 +1,6 @@
 ---
 title: "test"
-permalink: /docs
+permalink: /docs/
 ---
 
 test test
