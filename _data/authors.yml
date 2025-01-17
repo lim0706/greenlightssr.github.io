@@ -11,3 +11,6 @@ Junoh Shin:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://99robong.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/99robong"
