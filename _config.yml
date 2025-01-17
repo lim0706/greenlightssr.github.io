@@ -17,12 +17,12 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # Site Settings
 locale: "ko-KR"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
-title: "99robong's blog"
+title: "Green Light"
 title_separator: "|"
-subtitle: # site tagline that appears below site title in masthead
-name: "Your Name"
-description: "An amazing website."
-url: "https://99robong.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle: "그린 팀 메모장"
+name: ""
+description: "SK Shilders Rookies 그린 팀 몇 명의 블로그입니다."
+url: "https://greenlightssr.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -46,7 +46,7 @@ comments:
     colorscheme: # "light" (default), "dark"
   utterances:
     theme: # "github-light" (default), "github-dark"
-    issue_term: # "pathname" (default)
+    issue_term: # "pathname" (default)``
   giscus:
     repo_id: # Shown during giscus setup at https://giscus.app
     category_name: # Full text name of the category
@@ -112,10 +112,10 @@ analytics:
 
 # Site Author
 author:
-  name: "Junoh Shin"
+  name: "Green Light"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
-  location: "Somewhere"
+  bio: "SK Shilders Rookies 그린 팀 몇 명의 블로그입니다."
+  location: "2, Toegye-ro 36-gil, Jung-gu, Seoul, Republic of Korea"
   email:
   links:
     - label: "Email"
