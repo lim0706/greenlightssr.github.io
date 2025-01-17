@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "test category"
+title: "블로그 만드는 중..."
 date: 2025-01-07
 categories: python-automation
 ---
 
-포스트 내용...
+아직 만드는 중입니다...
