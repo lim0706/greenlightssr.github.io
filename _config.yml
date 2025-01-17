@@ -227,6 +227,11 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 
+collections:
+  python-automation:
+    output: true
+    permalink: /:collection/:path/
+
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
