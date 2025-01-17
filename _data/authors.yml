@@ -1,13 +1,13 @@
 # /_data/authors.yml
 
-Junoh Shin:
+junoh_shin:
   name        : "Junoh Shin"
   bio         : "안녕하세요"
   avatar      : "/assets/images/junoh-shin.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "junoh9911@gmail.com"
+      url: "mailto:junoh9911@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://99robong.github.io"
