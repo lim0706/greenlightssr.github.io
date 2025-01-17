@@ -13,7 +13,7 @@ defaults:
       type: python-automation
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
 ---
 
