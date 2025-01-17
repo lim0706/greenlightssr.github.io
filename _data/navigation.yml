@@ -1,14 +1,27 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://greenlightssr.github.io
-  - title: "test"
-    url: /docs/test/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Home"
+    url: "/"
+
+  - title: "categories"
+    url: "/categories/"
+    dropdown:
+      - title: "python-automation"
+        url: "/categories/python-automation/"
+      - title: "security"
+        url: "/categories/security/"
+      - title: "etc"
+        url: "/categories/etc/"
+
+  #- title: "태그"
+  #  url: "/tags/"
+  #  dropdown:
+  #    - title: "Jekyll"
+  #      url: "/tags/jekyll/"
+  #    - title: "GitHub"
+  #      url: "/tags/github/"
+  #    - title: "Ruby"
+  #      url: "/tags/ruby/"
+
+  - title: "소개"
+    url: "/about/"
