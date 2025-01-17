@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: page
 title: "About"
 permalink: /about/
 ---
@@ -7,7 +7,7 @@ permalink: /about/
 ## 저자 소개
 
 <div class="authors">
-  {% for author_key in site.data.authors %}
+  {% for author_key in site.data.authors | keys %}
     {% assign author = site.data.authors[author_key] %}
     <div class="author">
       <img src="{{ author.avatar }}" alt="{{ author.name }}" class="author-avatar" />
