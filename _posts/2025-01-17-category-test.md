@@ -2,7 +2,7 @@
 layout: single
 title: "스터디 사용법..."
 date: 2025-01-17
-last_modified_at: 2025-01-19
+last_modified_at: 2025-01-20
 categories: python-automation
 author: junoh_shin
 ---
@@ -17,8 +17,9 @@ author: junoh_shin
 
 본명 안쓰시고 닉네임 쓰셔도 됩니다.
 
-### 2./posts에 글 쓰기
+### 2./\_posts에 글 쓰기
 
 써져있는 글 보고 형식 베껴서 일단 작성하시면 될 것 같습니다.
+모르겠다 싶으시면 물어봐주시면 자세히 알려드리겠습니다.
 
 > 계속 업데이트 중입니다...
