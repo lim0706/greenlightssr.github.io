@@ -5,6 +5,8 @@ date: 2025-01-17
 last_modified_at: 2025-01-20
 categories: python-automation
 author: junoh_shin
+tags:
+  - python
 ---
 
 ### 1./\_data/authors.yml에 본인 데이터 추가하기
@@ -18,7 +20,6 @@ author: junoh_shin
 &nbsp;&nbsp;bio: "" // 설명입니다.<br>
 &nbsp;&nbsp;avatar: "" // 프로필 이미지입니다. /assets/images 안에 파일 넣고 경로 입력하시면 됩니다.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;links: // 각자 링크 형식에 맞춰 넣으시면 됩니다. 없으시면 입력 안하시면 됩니다.
-
 
 ### 2./\_posts에 글 쓰기
 
