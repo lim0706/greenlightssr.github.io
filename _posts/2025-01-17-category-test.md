@@ -7,15 +7,17 @@ categories: python-automation
 author: junoh_shin
 ---
 
-### 0. lms.sslc.kr 확인
-
-스터디 게시판에 구글 폼 링크 올렸습니다.<br>
-스터디 언제 진행할 지, 어떻게 할 지 등등<br>
-의견 수렴해서 정하겠습니다.
-
 ### 1./\_data/authors.yml에 본인 데이터 추가하기
 
+![author-help](/assets/images/help-author.png)<br>
 본명 안쓰시고 닉네임 쓰셔도 됩니다.
+
+닉네임: // 소문자, 언더스코어만 가능, 띄어쓰기 불가.<br>
+// 띄어쓰기 두칸 씩 잘 맞춰야 합니다.<br>
+&nbsp;&nbsp;name: "" // 이름입니다.<br>
+&nbsp;&nbsp;bio: "" // 설명입니다.<br>
+&nbsp;&nbsp;avatar: "" // 프로필 이미지입니다. /assets/images 안에 파일 넣고 경로 입력하시면 됩니다.<br>
+
 
 ### 2./\_posts에 글 쓰기
 
