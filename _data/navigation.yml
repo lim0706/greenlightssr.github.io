@@ -13,8 +13,8 @@ main:
       - title: "etc"
         url: "/categories/etc/"
 
-  #- title: "태그"
-  #  url: "/tags/"
+  - title: "태그"
+    url: "/tags/"
   #  dropdown:
   #    - title: "Jekyll"
   #      url: "/tags/jekyll/"
