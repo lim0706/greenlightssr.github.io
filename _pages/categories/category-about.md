@@ -5,4 +5,6 @@ permalink: /categories/about/
 category:
   - about
 taxonomy: about
+sidebar:
+  nav: "categories"
 ---

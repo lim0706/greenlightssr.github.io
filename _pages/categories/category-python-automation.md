@@ -5,4 +5,6 @@ permalink: /categories/python-automation/
 category:
   - python automation
 taxonomy: python automation
+sidebar:
+  nav: "categories"
 ---

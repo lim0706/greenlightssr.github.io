@@ -6,6 +6,8 @@ last_modified_at: 2025-01-22
 categories:
   - about
 author: junoh_shin
+sidebar:
+  nav: "categories"
 ---
 
 ## 블로그 사용볍
