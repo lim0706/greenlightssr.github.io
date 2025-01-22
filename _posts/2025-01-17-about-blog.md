@@ -2,11 +2,10 @@
 layout: single
 title: "스터디 사용법..."
 date: 2025-01-17
-last_modified_at: 2025-01-20
-categories: python-automation
+last_modified_at: 2025-01-22
+categories:
+  - about
 author: junoh_shin
-tags:
-  - python
 ---
 
 ### 1./\_data/authors.yml에 본인 데이터 추가하기
