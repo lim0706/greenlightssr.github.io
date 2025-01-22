@@ -4,4 +4,5 @@ title: "python automation"
 permalink: /categories/python-automation/
 category:
   - python automation
+taxonomy: python automation
 ---
