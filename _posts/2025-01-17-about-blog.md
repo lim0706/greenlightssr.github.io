@@ -8,6 +8,8 @@ categories:
 author: junoh_shin
 ---
 
+## 블로그 사용볍
+
 ### 1./\_data/authors.yml에 본인 데이터 추가하기
 
 ![author-help](/assets/images/help-author.png)<br>
