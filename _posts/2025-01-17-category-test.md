@@ -17,6 +17,7 @@ author: junoh_shin
 &nbsp;&nbsp;name: "" // 이름입니다.<br>
 &nbsp;&nbsp;bio: "" // 설명입니다.<br>
 &nbsp;&nbsp;avatar: "" // 프로필 이미지입니다. /assets/images 안에 파일 넣고 경로 입력하시면 됩니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;links: // 각자 링크 형식에 맞춰 넣으시면 됩니다. 없으시면 입력 안하시면 됩니다.
 
 
 ### 2./\_posts에 글 쓰기
