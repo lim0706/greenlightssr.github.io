@@ -22,7 +22,9 @@ main:
   #      url: "/tags/ruby/"
 
 categories:
-  - title: "python-automation"
+  - title: "Python Automation"
     url: "/categories/python-automation/"
-  - title: "about"
+  - title: "Sys/Net Security"
+    url: "/categories/sys-net-security/"
+  - title: "About"
     url: "/categories/about/"
