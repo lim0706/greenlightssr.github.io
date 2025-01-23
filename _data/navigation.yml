@@ -6,7 +6,7 @@ main:
   - title: "Authors"
     url: "/authors/"
 
-  - title: "categories"
+  - title: "Categories"
     url: "/categories/"
     dropdown:
       - title: "python-automation"
@@ -14,7 +14,7 @@ main:
       - title: "about"
         url: "/categories/about/"
 
-  - title: "태그"
+  - title: "Tags"
     url: "/tags/"
   #  dropdown:
   #    - title: "Jekyll"
