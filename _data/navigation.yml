@@ -22,3 +22,13 @@ main:
   #      url: "/tags/github/"
   #    - title: "Ruby"
   #      url: "/tags/ruby/"
+
+categories:
+  - title: "python-automation"
+    url: "/categories/python-automation/"
+  - title: "about"
+    url: "/categories/about/"
+  - title: "security"
+    url: "/categories/security/"
+  - title: "etc"
+    url: "/categories/etc/"
