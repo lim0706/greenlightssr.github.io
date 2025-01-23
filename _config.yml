@@ -115,7 +115,7 @@ author:
   name: "Green Light"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "SK Shilders Rookies 그린 팀 몇 명의 블로그입니다."
-  location: "2, Toegye-ro 36-gil, Jung-gu, Seoul, Republic of Korea"
+  location: "2, Toegye-ro 36-gil, Jung-gu"
   email:
   links:
     - label: "Email"
