@@ -5,9 +5,72 @@ layout: archive
 {{ content }}
 
 <div class="authors">
-  {% for author in site.data.authors %}
-    <div class="author">
-      {% include author-profile.html %}
+  {% for authorKV in site.data.authors %}
+  {% assign author = authorKV[1] %}
+  <div class="author">
+    <div class="author__avatar">
+      <a href="{{ author.home | default: '/authors/' | absolute_url }}">
+        <img src="{{ author.avatar | relative_url }}" width="150" height="150" alt="{{ author.name }}" itemprop="image" class="u-photo author-avatar">
+      </a>
     </div>
+    <div class="author__content">
+      <h2 class="author__name p-name" itemprop="name">
+        <a class="u-url" rel="me" href="{{ author.home | default: '/authors' | absolute_url }}" itemprop="url">{{ author.name }}</a>
+      </h2>
+      {% if author.bio %}
+        <p class="author__bio p-note" itemprop="description">{{ author.bio | markdownify }}</p>
+      {% endif %}
+    </div>
+    <div class="author__urls-wrapper">
+      <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+      <ul class="author__urls social-icons">
+        {% if author.location %}
+          <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+          </li>
+        {% endif %}
+
+        {% if author.links %}
+          {% for link in author.links %}
+            {% if link.label and link.url %}
+              <li>
+                <a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}>
+                  <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if author.uri %}
+          <li>
+            <a href="{{ author.uri }}" itemprop="url" rel="me">
+              <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if author.email %}
+          <li>
+            <a href="mailto:{{ author.email }}" rel="me" class="u-email">
+              <meta itemprop="email" content="{{ author.email }}" />
+              <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if author.github %}
+          <li>
+            <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+              <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+            </a>
+          </li>
+        {% endif %}
+        <!-- 필요에 따라 다른 소셜 링크 추가 가능 -->
+
+        {% include author-profile-custom-links.html %}
+      </ul>
+    </div>
+  </div>
   {% endfor %}
 </div>
