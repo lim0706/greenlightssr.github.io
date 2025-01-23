@@ -4,6 +4,7 @@
 layout: default
 ---
 <div class="author-profile">
+  {% assign author = site.data.authors[page.author_key] %}
   {% include author-profile.html %}
 </div>
 
