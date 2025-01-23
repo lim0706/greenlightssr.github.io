@@ -26,6 +26,14 @@
     </h2>
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
-    {% if post.author_profile %}<p>{{ post.author }}</p>{% endif %}
+    {% if post.author_profile %}
+      {% assign author = site.data.authors[post.author] | default: author %}
+      <div style="text-align: right">
+        <a href="{{ author.url | relative_url }}" class="avatar">
+          <img src="{{ author.avatar | relative_url }}" width="30" height="30" alt="{{ author.name }}" class="avatar__image">
+          <span class="avatar__name">{{ author.name }}</span>
+        </a>
+      </div>
+    {% endif %}
   </article>
 </div>
