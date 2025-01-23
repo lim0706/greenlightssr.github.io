@@ -1,7 +1,7 @@
 ---
-layout: authors
-title: "Authors"
-permalink: /authors/
+layout: single
+title: "About"
+permalink: /about/
 ---
 
 ## 저자 소개
