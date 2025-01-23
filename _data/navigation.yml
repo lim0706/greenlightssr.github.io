@@ -8,10 +8,8 @@ main:
     dropdown:
       - title: "python-automation"
         url: "/categories/python-automation/"
-      - title: "security"
-        url: "/categories/security/"
-      - title: "etc"
-        url: "/categories/etc/"
+      - title: "about"
+        url: "/categories/about/"
 
   - title: "태그"
     url: "/tags/"
