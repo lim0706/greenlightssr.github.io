@@ -12,9 +12,11 @@ sidebar:
 
 ## 블로그 사용볍
 
+- 블로그에 글 어떻게 쓰고
+
 ### 1./\_data/authors.yml에 본인 데이터 추가하기
 
-![author-help](/assets/images/help-author.png)<br>
+![author-help](/assets/images/posts/help-author.png)<br>
 본명 안쓰시고 닉네임 쓰셔도 됩니다.
 
 닉네임: // 소문자, 언더스코어만 가능, 띄어쓰기 불가.<br>

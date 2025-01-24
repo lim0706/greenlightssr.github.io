@@ -3,7 +3,7 @@
 junoh_shin:
   name: "Junoh Shin"
   bio: "안녕하세요. 스터디 장을 맡고 있습니다.<br> 다양한 주제로 블로그를 쓰기 위해 노력 중입니다.<br> 잘 부탁드립니다."
-  avatar: "/assets/images/junoh-shin.jpg"
+  avatar: "/assets/images/users/junoh-shin.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -18,7 +18,7 @@ junoh_shin:
 doyoon:
   name: "Kim Doyoon"
   bio: "안녕하세요"
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/users/bio-photo.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
