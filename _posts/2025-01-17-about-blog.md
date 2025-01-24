@@ -47,7 +47,7 @@ id: // 소문자, 언더스코어만 가능, 띄어쓰기 불가.<br>
 
 ### 2./\_posts/에 글 쓰기
 
-/_posts/ 폴더 아래에 yyyy-mm-dd-title.md 형식으로 파일을 만들어줍니다.<br>
+/\_posts/ 폴더 아래에 yyyy-mm-dd-title.md 형식으로 파일을 만들어줍니다.<br>
 yyyy-mm-dd는 작성 날짜이고 title은 주소가 됩니다.<br>
 이 포스트의 경우, 주소는 [https://greenlightssr.github.io/about/about-blog/]가 됩니다.<br>
 
@@ -55,18 +55,28 @@ yyyy-mm-dd는 작성 날짜이고 title은 주소가 됩니다.<br>
 
 위의 author 부분 말고 다른 부분도 직접 설정할 수 있습니다.<br>
 ![post header](/assets/images/posts/about/post-header.png)<br>
-layout: /_layout/ 폴더 아래에 있는 여러가지 layout을 사용할 수 있습니다.<br>
+layout: /\_layout/ 폴더 아래에 있는 여러가지 layout을 사용할 수 있습니다.<br>
 title: "" 사이트에서 보일 포스트의 제목입니다.<br>
 date: 글을 최초 작성한 날짜입니다.<br>
 last_modified_at: 글을 마지막으로 수정한 날짜입니다.<br>
-```
-날짜들은 현재 날짜보다 미래를 설정하면 업로드가 되지 않을 수 있습니다.
-새벽에 포스트를 업로드할 경우 바뀐 날짜로 업로드하면 업로드가 되지 않을 수 있습니다.
-```
+
+`날짜들은 현재 날짜보다 미래를 설정하면 업로드가 되지 않을 수 있습니다. 새벽에 포스트를 업로드할 경우 바뀐 날짜로 업로드하면 업로드가 되지 않을 수 있습니다.`
+
 categories: 여러개를 설정할 수 있습니다. 하나만 설정하는 것을 권장합니다.<br>
-/_pages/categories/ 아래에 카테고리를 만들 수 있습니다.<br>
+/\_pages/categories/ 아래에 카테고리를 만들 수 있습니다.<br>
 tags: 여러개를 설정할 수 있습니다.<br>
-/_pages/tags
+/\_pages/tags/ 아래에 태그를 만들 수 있습니다.<br>
+author: 글쓴이를 설정할 수 있습니다.<br>
+sidebar: 포스트 왼쪽에 무엇을 표시할지 정할 수 있습니다. 글쓴이 정보는 기본으로 설정되어있습니다.<br>
+&nbsp;&nbsp;nav: "category" 카테고리를 표시할 수 있습니다.<br>
+
+#### 2) 내용 작성하기
+
+이제 드디어 글을 작성하실 수 있습니다.<br>
+그냥 글을 작성해도 되지만, 마크다운의 문법에 맞춰서 작성하면
+좀 더 보기 좋은 글을 만들 수 있습니다.<br><br>
+[마크다운 문법 & 테스트](https://markdown-it.github.io) 사이트에서<br>
+마크다운 문법을 간단하게 확인하고 테스트 해볼 수 있습니다.
 
 ### 3. 어떻게 보이는지 실행해보기
 
@@ -74,39 +84,52 @@ tags: 여러개를 설정할 수 있습니다.<br>
 이걸 확인하는 방법이 몇 가지 있습니다.
 
 #### 1) 마크다운 미리보기
+
 ![previewer icon](/assets/images/posts/about/markdown-previewer.png)<br>
 vscode에서 미리보기 아이콘을 누르면 마크다운이 어떻게 표시 되는지 미리 확인할 수 있습니다.<br>
 이 외에도 인터넷에 많은 마크다운 미리보기 사이트가 있습니다.
 
 #### 2) 로컬에서 직접 실행해보기
+
 미리보기로 볼 순 있지만 실제 사이트에 보이는 것과 미묘하게 일부 다른 부분이 있습니다.<br>
 미리보기에는 글 내용만 보이지만 포스트의 헤더와 블로그의 나머지 부분이 적용된 건 볼 수 없습니다.<br>
 Jekyll은 RubyGem이기 때문에 ruby가 설치되어 있어야 실행해볼 수 있습니다.<br>
+
 ##### 1. Ruby 설치
+
 Mac OS는 기본적으로 ruby가 설치되어 있습니다. 하지만 버전이 낮아서 업데이트를 해야할 수도 있습니다.<br>
 윈도우에는 그런거 없습니다. 설치해야 합니다.
 
 ##### 2. Bundler 설치
 
 Bunder는 ruby의 패키지 의존성 관리 툴입니다.
-``` Shell
-gem install bundler
+
+```Shell
+$ gem install bundler
 ```
+
 Bundler를 설치해주고
-``` Shell
-bundle install
+
+```Shell
+$ bundle install
 ```
+
 을 통해 의존성을 설치해줍니다.<br>
 만약 오류가 발생한다면, Gemfile에 의존성이 없는 것이기 때문에
-``` Shell
-bundle add jekyll
+
+```Shell
+$ bundle add jekyll
 ```
+
 로 Jekyll을 추가해줍니다.
+
 ##### 3. 실행
-``` Shell
+
+```Shell
 # project root folder(/gieenlightssr.github.io)
-bundle exec jekyll serve
+$ bundle exec jekyll serve
 ```
+
 를 통해 사이트를 서버에 올립니다.<br>
 이제 127.0.0.1:4000에서 실제 블로그와 내 포스트가 어떻게 보일지를 확인 할 수 있습니다.
 
